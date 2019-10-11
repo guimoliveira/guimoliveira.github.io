@@ -4,6 +4,8 @@
   </head>
 
   <body>
-    The Dino Bot
+    The Dino Bot<br><br>
+    
+    <a href="despertador.html">Despertador</a>
   </body>
 </html>
