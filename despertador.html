@@ -124,7 +124,13 @@
 
 					if (dif <= 30000) {
 						if (window.Notification && Notification.permission === "granted") {
-							new Notification("Despertador: " + time);
+							var t;
+							function createNot() {
+								var not = new Notification("Despertador: " + time);	
+								t = setTimeout(createNot, 500);
+								not.onclick = function(){clearTimeout(t);}
+							}
+							createNot();
 						} else {
 							alert("Despertador: " + time);
 						}
