@@ -126,7 +126,7 @@
 						if (window.Notification && Notification.permission === "granted") {
 							var t;
 							function createNot() {
-								var not = new Notification("Despertador: " + time);	
+								var not = new Notification("Despertador - " + time + " - Clique para parar.");	
 								t = setTimeout(createNot, 30000);
 								not.onclick = function(){clearTimeout(t);}
 							}
