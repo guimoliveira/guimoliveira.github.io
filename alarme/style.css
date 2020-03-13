@@ -1,6 +1,6 @@
 body {
-	background: lightgrey;
-	color: #4d4da7;
+	background: lightblue;
+	color: steelblue;
 	text-align: center;
 }
 
@@ -35,7 +35,7 @@ body {
 	border: 1px solid #205173;
 	font-family: arial;
 	font-size: 12px;
-	background: #4d4da7;
+	background: steelblue;
 	color: white;
 	border-radius: 0 10px 10px 0;
 	cursor: pointer;
@@ -50,13 +50,13 @@ body {
 	border-radius: 10px;
 	font-family: arial;
 	font-size: 12px;
-	background: #4d4da7;
+	background: steelblue;
 	color: white;
 	cursor: pointer;
 }
 
 .delete:hover, .add:hover {
-	background: #353592;
+	background: #356a96;
 }
 
 .delete:active, .add:active {
