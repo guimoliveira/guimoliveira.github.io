@@ -3,7 +3,7 @@ body {
 	background: -moz-linear-gradient(-45deg, rgb(136,191,232) 0%, rgb(34,146,216) 100%);
 	background: -webkit-linear-gradient(-45deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
 	background: linear-gradient(135deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
-	color: darkBlue;
+	color: #6464bd;
 	text-align: center;
 }
 
@@ -36,7 +36,9 @@ body {
 	border: 1px solid grey;
 	font-family: arial;
 	font-size: 12px;
-	background: #ececec;
+	background: #6464bd;
+	color: white;
+	border-radius: 0 10px 10px 0;
 }
 
 .add {
@@ -45,9 +47,11 @@ body {
 	height: 25px;
 	padding: 2px;
 	border: 1px solid grey;
+	border-radius: 10px;
 	font-family: arial;
 	font-size: 12px;
-	background: #ececec;
+	background: #6464bd;
+	color: white;
 }
 
 .delete:hover, .add:hover {
