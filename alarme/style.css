@@ -1,0 +1,52 @@
+.title {
+				width: 100px;
+				height: 25px;
+				text-align: center;
+				margin-bottom: 5px;
+				font-family: arial;
+				font-size: 14px;
+			}
+
+			.timer {
+				width: 76px;
+				height: 25px;
+				margin-bottom: 5px;
+				padding: 2px;
+				border: 1px solid grey;
+				font-family: arial;
+				font-size: 12px;
+			}
+			
+			.delete {
+				width: 25px;
+				height: 25px;
+				margin-left: -1px;
+				margin-bottom: 5px;
+				padding: 2px;
+				border: 1px solid grey;
+				font-family: arial;
+				font-size: 12px;
+				background: #ececec;
+			}
+
+			.add {
+				width: 100px;
+				height: 25px;
+				padding: 2px;
+				border: 1px solid grey;
+				font-family: arial;
+				font-size: 12px;
+				background: #ececec;
+			}
+
+			.delete:hover, .add:hover {
+				background: #fafafa;
+			}
+
+			.delete:active, .add:active {
+				border: 1px solid lightgrey;
+			}
+
+			#timers {
+				margin-bottom: 5px;
+			}
