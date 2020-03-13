@@ -10,7 +10,7 @@ body {
 .title {
 	margin-top: 100px;
 	height: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	font-family: arial;
 	font-size: 32px;
 }
@@ -21,10 +21,11 @@ body {
 	height: 25px;
 	margin-bottom: 5px;
 	padding: 2px;
-	border: 1px solid grey;
+	border: 1px solid #205173;
 	font-family: arial;
 	font-size: 12px;
 	border-radius: 10px 0 0 10px;
+	text-align: center;
 }
 
 .delete {
@@ -34,12 +35,13 @@ body {
 	margin-left: -1px;
 	margin-bottom: 5px;
 	padding: 2px;
-	border: 1px solid grey;
+	border: 1px solid #205173;
 	font-family: arial;
 	font-size: 12px;
-	background: #6464bd;
+	background: #4d4da7;
 	color: white;
 	border-radius: 0 10px 10px 0;
+	cursor: pointer;
 }
 
 .add {
@@ -47,20 +49,21 @@ body {
 	width: 100px;
 	height: 25px;
 	padding: 2px;
-	border: 1px solid grey;
+	border: 1px solid #205173;
 	border-radius: 10px;
 	font-family: arial;
 	font-size: 12px;
-	background: #6464bd;
+	background: #4d4da7;
 	color: white;
+	cursor: pointer;
 }
 
 .delete:hover, .add:hover {
-	background: #fafafa;
+	background: #353592;
 }
 
 .delete:active, .add:active {
-	border: 1px solid lightgrey;
+	border: 1px solid grey;
 }
 
 #timers {
