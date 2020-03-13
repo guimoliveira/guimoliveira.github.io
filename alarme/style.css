@@ -1,9 +1,6 @@
 body {
-	background: rgb(136,191,232);
-	background: -moz-linear-gradient(-45deg, rgb(136,191,232) 0%, rgb(34,146,216) 100%);
-	background: -webkit-linear-gradient(-45deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
-	background: linear-gradient(135deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
-	color: #6464bd;
+	background: #adb1d0;
+	color: #205173;
 	text-align: center;
 }
 
