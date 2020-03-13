@@ -1,8 +1,8 @@
 body {
-	background: rgb(207,231,250); /* Old browsers */
-	background: -moz-linear-gradient(-45deg, rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: rgb(136,191,232);
+	background: -moz-linear-gradient(-45deg, rgb(136,191,232) 0%, rgb(34,146,216) 100%);
+	background: -webkit-linear-gradient(-45deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
+	background: linear-gradient(135deg, rgb(136,191,232) 0%,rgb(34,146,216) 100%);
 	color: darkBlue;
 	text-align: center;
 }
