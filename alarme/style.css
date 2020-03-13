@@ -3,13 +3,13 @@ body {
 	background: -moz-linear-gradient(-45deg, rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	color: white;
+	color: darkBlue;
 }
 
 .title {
 	width: 100%;
-	margin-top: 50px;
-	height: 25px;
+	margin-top: 100px;
+	height: 30px;
 	text-align: center;
 	margin-bottom: 5px;
 	font-family: arial;
@@ -17,6 +17,7 @@ body {
 }
 
 .timer {
+	margin: auto;
 	width: 76px;
 	height: 25px;
 	margin-bottom: 5px;
@@ -27,6 +28,7 @@ body {
 }
 
 .delete {
+	margin: auto;
 	width: 25px;
 	height: 25px;
 	margin-left: -1px;
@@ -39,6 +41,7 @@ body {
 }
 
 .add {
+	margin: auto;
 	width: 100px;
 	height: 25px;
 	padding: 2px;
