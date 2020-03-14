@@ -1,16 +1,32 @@
 <html>
 	<head>
-		<title>Despertador</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />		
+		<title>Relógio</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />	
+		<meta charset="utf-8" />
 	</head>
 
 	<body>
-		<div class="title">Alarme</div>
-		<div id="timers">
-			
+		<h1 style="font-size: 100px; height: 100px; margin-top: 30px;">⏰</h1>
+
+		<div id="time">Relógio</div>
+	
+		<div class="box">
+			<div class="title">Alarme</div>
+			<div id="alarms"></div>
+			<input type="button" value="Adicionar" class="button" onclick="addAlarm();">
 		</div>
 
-		<input type="button" value="Adicionar" class="add" onclick="add();">
+		<div class="box">
+			<div class="title">Temporizador</div>
+			<div id="timers"></div>
+			<input type="button" value="Adicionar" class="button" onclick="addTimer();">
+		</div>
+
+		<div class="box">
+			<div class="title">Cronômetro</div>
+			<div id="chrono">00:00:00</div>
+			<input type="button" id="chronoButton" value="Iniciar" class="button" onclick="startStop();">
+		</div>
 
 		<script src="js.js"></script>
 		
