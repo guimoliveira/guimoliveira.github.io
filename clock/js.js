@@ -32,7 +32,7 @@ function notify(msg) {
 }
 
 function addAlarm() {
-
+  
   var br = document.createElement("br");
 
   var input = document.createElement("input");
@@ -190,6 +190,10 @@ function startStop() {
   }
 }
 
-setInterval(update, 1000);
-addAlarm();
-addTimer();
+try {
+  addAlarm();
+  addTimer();
+  setInterval(update, 1000);
+} catch (e) {
+  document.write("Navegador incompatível");
+}
