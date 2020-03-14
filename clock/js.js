@@ -23,13 +23,11 @@ function askPermission() {
   }
 }
 
-function notify(msg, repeat) {
+function notify(msg) {
   var not = new Notification(msg);	
-  var t = repeat ? setTimeout(function(){notify(msg);}, repeat) : 0;
   not.onclick = function(){
     audio.pause();
     audio.currentTime = 0;
-    clearTimeout(t);
   }
 }
 
@@ -122,7 +120,7 @@ function update() {
     if (dif <= 500) {
       audio.play();
       if (window.Notification && Notification.permission === "granted") {
-        notify("Alarme: " + time + ". Toque para parar.", 20000);
+        notify("Temporizador.");
       } else {
         alert("Alarme: " + time);
         audio.pause();
@@ -147,7 +145,7 @@ function update() {
       audio.play();
 
       if (window.Notification && Notification.permission === "granted") {
-        notify("Temporizador. Toque para parar.", 20000);
+        notify("Temporizador.");
       } else {
         alert("Temporizador.");
         audio.pause();
