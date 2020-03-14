@@ -195,5 +195,5 @@ try {
   addTimer();
   setInterval(update, 1000);
 } catch (e) {
-  document.write("Navegador incompatível");
+  document.body.innerHTML = "<center style='color: white'>Navegador incompatível</center>";
 }
