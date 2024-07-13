@@ -74,7 +74,7 @@ a:active {
 }
 
 .contact *:not(a) {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
 }
 
@@ -175,6 +175,8 @@ section.tertiary h5 {
     max-width: 960px;
     margin: auto;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 section .container {
@@ -257,8 +259,9 @@ section.tertiary .container {
     display: none;
 }
 
-.float-right {
-    float: right;
+.right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 500px) {
