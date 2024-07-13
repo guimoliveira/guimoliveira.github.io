@@ -13,14 +13,13 @@ function generateProxyURL(destination) {
 }
 
 function request(url, callback) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            callback(this.responseText);
+    fetch(url, {method: 'GET'}).then((response) => {
+        if (response.ok) {
+            response.text().then((text) => {
+                callback(text);
+            });
         }
-    };
-    xhttp.open("GET", url);
-    xhttp.send();
+    });
 }
 
 function fetchGitHubRepos(callback) {
@@ -173,6 +172,30 @@ function animateSections() {
         document.documentElement.style.setProperty('--rot-2', '-10deg');
     } else if (bottom > ySection3 - 100) {
         document.documentElement.style.setProperty('--rot-3', '10deg');
+    }
+}
+
+function openNotes() {
+    document.body.classList.add('notes-open');
+
+    // READ
+    const notes = localStorage.getItem('notes');
+    if (notes) {
+        document.getElementById('notesTextarea').value = notes;
+    }
+}
+
+function closeNotes() {
+    document.body.classList.remove('notes-open');
+}
+
+function saveNotes(text) {
+    if (text) {
+        // CREATE, UPDATE
+        localStorage.setItem('notes', text);
+    } else {
+        // DELETE
+        localStorage.removeItem('notes');
     }
 }
 
