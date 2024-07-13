@@ -175,6 +175,30 @@ function animateSections() {
     }
 }
 
+function openNotes() {
+    document.body.classList.add('notes-open');
+
+    // READ
+    const notes = localStorage.getItem('notes');
+    if (notes) {
+        document.getElementById('notesTextarea').value = notes;
+    }
+}
+
+function closeNotes() {
+    document.body.classList.remove('notes-open');
+}
+
+function saveNotes(text) {
+    if (text) {
+        // CREATE, UPDATE
+        localStorage.setItem('notes', text);
+    } else {
+        // DELETE
+        localStorage.removeItem('notes');
+    }
+}
+
 window.onscroll = animateSections;
 window.onload = () => {
     document.getElementsByTagName('header')[0].style.opacity = '1';

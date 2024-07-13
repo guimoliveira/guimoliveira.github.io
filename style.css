@@ -78,7 +78,7 @@ a:active {
     margin-bottom: 20px;
 }
 
-input, textarea {
+input, textarea, button {
     font-family: "Nanum Gothic Coding", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -177,6 +177,8 @@ section.tertiary h5 {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    transition: all .3s linear;
+    padding-left: 40px;
 }
 
 section .container {
@@ -243,6 +245,68 @@ section.tertiary .container {
     max-width: 100%;
 }
 
+.notes {
+    position: fixed;
+    height: 100%;
+    min-height: auto;
+    width: 400px;
+    max-width: 100vw;
+    background: var(--color-2);
+    top: 0;
+    left: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.notes h1 {
+    color: var(--color-1);
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.notes button {
+    color: white;
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.notes textarea {
+    background: rgba(0, 0, 0, 0.2);
+    border: 0;
+    width: 400px !important;
+    max-width: 100vw;
+    height: calc(100% - 6em) !important;
+    outline: 0;
+    color: lightgrey;
+    padding: 20px;
+}
+
+body:not(.notes-open) .notes {
+    width: 0;
+}
+body.notes-open .container {
+    padding-left: 400px;
+    width: calc(100% - 400px);
+}
+
+.btn-notes {
+    background: var(--color-2);
+    border-radius: 0 10px 10px 0;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    border: 0;
+    cursor: pointer;
+}
+
 .mt-5 {
     margin-top: 5vh;
 }
@@ -262,7 +326,32 @@ section.tertiary .container {
 .right {
     display: flex;
     justify-content: flex-end;
+    text-align: right;
+    padding-left: 40%;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+}
+  
 
 @media only screen and (max-width: 500px) {
     body {
@@ -271,5 +360,16 @@ section.tertiary .container {
 
     section {
         min-height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body.notes-open .container {
+        padding-left: 40px;
+        width: 100%;
+    }
+
+    .btn-notes {
+        top: 85%;
     }
 }

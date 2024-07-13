@@ -67,6 +67,20 @@
         </div>
     </footer>
 
+    <button onclick="openNotes();" class="btn-notes">
+        <img src="notes-icon.png" width="25">
+        <h5>Notes</h5>
+    </button>
+
+    <section class="notes">
+        <button onclick="closeNotes();">x</button>
+        <h1>Notes</h1>
+
+        <textarea id="notesTextarea" onkeyup="saveNotes(this.value)">Write your next best idea here, and it will be saved automatically.</textarea>
+    </section>
+
+    
+
     <script src="script.js"></script>
 </body>
 </html>
